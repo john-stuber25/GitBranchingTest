@@ -19,6 +19,11 @@ public class Data {
         }
     }
 
+    public Data(ArrayList<Integer> intData, ArrayList<Double> doubleData) {
+        this.intData = intData;
+        this.doubleData = doubleData;
+    }
+
     public String toString(){
         StringBuilder str = new StringBuilder();
         for(Integer i : intData){
