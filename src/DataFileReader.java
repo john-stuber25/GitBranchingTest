@@ -28,8 +28,7 @@ public class DataFileReader {
                     tempDouble.add(Double.parseDouble(lineData[i]));
                 }
 
-                Data data = new Data(tempInt, tempDouble);
-                allData.add(data);
+                allData.add(new Data(tempInt, tempDouble));
             }
         }   catch(FileNotFoundException fnfException){
             System.out.println("File not found");
